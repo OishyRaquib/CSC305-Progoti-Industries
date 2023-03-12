@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Separator?>
+<?import javafx.scene.control.TextArea?>
+<?import javafx.scene.effect.SepiaTone?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.BorderPane?>
+<?import javafx.scene.text.Font?>
+<?import javafx.scene.text.Text?>
+
+
+<AnchorPane id="AnchorPane" prefHeight="455.0" prefWidth="711.0" xmlns:fx="http://javafx.com/fxml/1" xmlns="http://javafx.com/javafx/8.0.171" fx:controller="main.FileComplainSceneController">
+   <children>
+      <BorderPane layoutX="-12.0" prefHeight="100.0" prefWidth="723.0" style="-fx-background-color: #17202A;">
+         <left>
+            <Button fx:id="back" mnemonicParsing="false" onAction="#goBackOnClick" prefHeight="30.0" prefWidth="25.0" style="-fx-background-color: #2E4053;" text="&lt;" textFill="#f8f8f8" BorderPane.alignment="CENTER">
+               <BorderPane.margin>
+                  <Insets left="30.0" top="10.0" />
+               </BorderPane.margin>
+            </Button>
+         </left>
+      </BorderPane>
+      <Separator layoutX="-3.0" layoutY="92.0" prefHeight="13.0" prefWidth="712.0" />
+      <Text layoutX="127.0" layoutY="229.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Please write your query below">
+         <font>
+            <Font size="14.0" />
+         </font>
+      </Text>
+      <TextArea fx:id="complain_fxid" layoutX="127.0" layoutY="247.0" prefHeight="121.0" prefWidth="404.0" />
+      <Button layoutX="561.0" layoutY="396.0" mnemonicParsing="false" onAction="#submitComplainOnClick" prefHeight="25.0" prefWidth="75.0" style="-fx-background-color: #2E4053;" text="Submit" textFill="WHITE" />
+      <Text fill="#2d34bc" layoutX="174.0" layoutY="168.0" strokeType="OUTSIDE" strokeWidth="0.0" text="TELL US WHAT YOU HAVE TO SAY">
+         <font>
+            <Font size="24.0" />
+         </font>
+         <effect>
+            <SepiaTone />
+         </effect>
+      </Text>
+   </children>
+</AnchorPane>

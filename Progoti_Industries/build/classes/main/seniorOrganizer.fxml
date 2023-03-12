@@ -1,0 +1,85 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.Menu?>
+<?import javafx.scene.control.MenuBar?>
+<?import javafx.scene.control.MenuItem?>
+<?import javafx.scene.control.TextArea?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.BorderPane?>
+<?import javafx.scene.text.Font?>
+<?import javafx.scene.text.Text?>
+
+<BorderPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/18" xmlns:fx="http://javafx.com/fxml/1" fx:controller="mainpkg.SeniorOrganizerSceneController">
+   <top>
+      <MenuBar BorderPane.alignment="CENTER">
+        <menus>
+          <Menu mnemonicParsing="false" text="File">
+            <items>
+                  <MenuItem fx:id="createFile" mnemonicParsing="false" onAction="#createFile" text="Create" />
+                  <MenuItem fx:id="viewFile" mnemonicParsing="false" onAction="#viewFile" text="View" />
+              <MenuItem mnemonicParsing="false" text="Close" />
+            </items>
+          </Menu>
+          <Menu mnemonicParsing="false" text="Edit">
+            <items>
+                  <MenuItem fx:id="viewFiles" mnemonicParsing="false" onAction="#viewFiles" text="Records" />
+              <MenuItem fx:id="deleteFiles" mnemonicParsing="false" onAction="#deleteFiles" text="Delete" />
+            </items>
+          </Menu>
+          <Menu mnemonicParsing="false" text="View">
+            <items>
+              <MenuItem fx:id="purchasedShowTextFile" mnemonicParsing="false" onAction="#purchasedShowTextFile" text="purchased" />
+                  <MenuItem fx:id="viewPurchaseRequest" mnemonicParsing="false" onAction="#viewPurchaseRequest" text="request" />
+            </items>
+          </Menu>
+            <Menu mnemonicParsing="false" text="Send Notification">
+              <items>
+                <MenuItem mnemonicParsing="false" text="Adminstration" />
+                  <MenuItem mnemonicParsing="false" text="Marketing" />
+                  <MenuItem mnemonicParsing="false" text="purchase" />
+                  <MenuItem mnemonicParsing="false" text="IT" />
+                  <MenuItem mnemonicParsing="false" text="Accounting" />
+                  <MenuItem mnemonicParsing="false" text="Human Resource" />
+                  <MenuItem mnemonicParsing="false" text="Sales" />
+              </items>
+            </Menu>
+        </menus>
+      </MenuBar>
+   </top>
+   <center>
+      <AnchorPane prefHeight="200.0" prefWidth="200.0" BorderPane.alignment="CENTER">
+         <children>
+            <Label layoutX="511.0" layoutY="14.0" prefHeight="17.0" prefWidth="65.0" text="Mr.Kuddus">
+               <font>
+                  <Font name="System Bold" size="12.0" />
+               </font></Label>
+            <Label layoutX="166.0" layoutY="50.0" prefHeight="21.0" prefWidth="49.0" text="Stocks">
+               <font>
+                  <Font size="15.0" />
+               </font></Label>
+            <Button fx:id="profileButton" layoutX="513.0" layoutY="33.0" mnemonicParsing="false" onAction="#profileButtonClick" text="Profile" />
+            <Button fx:id="viewStockButton" layoutX="149.0" layoutY="293.0" mnemonicParsing="false" onAction="#viewStockOncCick" text="View Details" />
+            <Label fx:id="balanceView" layoutX="463.0" layoutY="64.0" prefHeight="17.0" prefWidth="100.0" text="00000000000" />
+            <Text layoutX="396.0" layoutY="78.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Balance:">
+               <font>
+                  <Font size="15.0" />
+               </font></Text>
+            <Button fx:id="requestBalanceOnClick" layoutX="462.0" layoutY="89.0" mnemonicParsing="false" onAction="#requestBalanceOnClick" style="-fx-background-color: yellow;" text="Request Balance" />
+            <Text layoutX="384.0" layoutY="130.0" strokeType="OUTSIDE" strokeWidth="0.0" text=" Production balance needed:">
+               <font>
+                  <Font size="15.0" />
+               </font></Text>
+            <Label layoutX="407.0" layoutY="138.0" prefHeight="22.0" prefWidth="143.0" text="12334567890" />
+            <Button fx:id="stopAllPurchases" layoutX="462.0" layoutY="194.0" mnemonicParsing="false" onAction="#stopAllPurchases" prefHeight="25.0" prefWidth="95.0" style="-fx-background-color: red;" text="Stop" />
+            <Text layoutX="389.0" layoutY="183.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Press to stop all Purchaces:">
+               <font>
+                  <Font size="15.0" />
+               </font></Text>
+            <Button fx:id="purchasedProductScene" layoutX="452.0" layoutY="318.0" mnemonicParsing="false" onAction="#purchasedProductScene" text="Purchased Product" />
+            <TextArea fx:id="showStock" layoutX="61.0" layoutY="78.0" prefHeight="200.0" prefWidth="257.0" />
+         </children>
+      </AnchorPane>
+   </center>
+</BorderPane>

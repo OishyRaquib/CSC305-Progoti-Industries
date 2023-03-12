@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.ButtonBar?>
+<?import javafx.scene.control.DatePicker?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.Menu?>
+<?import javafx.scene.control.MenuBar?>
+<?import javafx.scene.control.MenuItem?>
+<?import javafx.scene.control.TextArea?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.BorderPane?>
+
+<BorderPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="600.0" prefWidth="826.0" xmlns="http://javafx.com/javafx/18" xmlns:fx="http://javafx.com/fxml/1" fx:controller="mainpkg.MainController">
+   <top>
+      <MenuBar prefHeight="0.0" prefWidth="735.0" BorderPane.alignment="CENTER">
+        <menus>
+          <Menu mnemonicParsing="false" text="File">
+            <items>
+              <MenuItem mnemonicParsing="false" text="Close" />
+            </items>
+          </Menu>
+          <Menu mnemonicParsing="false" text="Edit">
+            <items>
+              <MenuItem mnemonicParsing="false" text="Delete" />
+            </items>
+          </Menu>
+          <Menu mnemonicParsing="false" text="Help">
+            <items>
+              <MenuItem mnemonicParsing="false" text="About" />
+            </items>
+          </Menu>
+            <Menu mnemonicParsing="false" text="view report">
+              <items>
+                <MenuItem mnemonicParsing="false" text="Action 1" />
+              </items>
+            </Menu>
+        </menus>
+      </MenuBar>
+   </top>
+   <right>
+      <AnchorPane prefHeight="563.0" prefWidth="819.0" BorderPane.alignment="CENTER">
+         <children>
+            <Label layoutX="689.0" layoutY="23.0" text="MR.Mokless" />
+            <Button layoutX="682.0" layoutY="50.0" mnemonicParsing="false" text="View profile" />
+            <TextField fx:id="duration" layoutX="31.0" layoutY="19.0" onAction="#dration" prefHeight="25.0" prefWidth="173.0" promptText="set production duration" />
+            <Button fx:id="clickToSaveDateTime" layoutX="31.0" layoutY="89.0" mnemonicParsing="false" onAction="#clickToSaveDateTime" text="save" />
+           
+            <ButtonBar layoutX="88.0" layoutY="82.0" prefHeight="40.0" prefWidth="200.0" />
+            <DatePicker fx:id="datePicker" layoutX="31.0" layoutY="50.0" onAction="#datePicker" />
+            <Label layoutX="671.0" layoutY="85.0" prefHeight="35.0" prefWidth="101.0" style="-fx-background-color: red;" />
+            <TextArea fx:id="textArea1" editable="false" layoutX="31.0" layoutY="139.0" prefHeight="200.0" prefWidth="200.0" promptText="Organizational Orders Requirement" />
+            <Button fx:id="orgOrders" layoutX="111.0" layoutY="339.0" mnemonicParsing="false" onAction="#orgOrders" text="view" />
+            <Button fx:id="reqInventory" layoutX="663.0" layoutY="127.0" mnemonicParsing="false" onAction="#reqInventory" style="-fx-background-color: lime;" text="Request Inventory " />
+            <Button layoutX="668.0" layoutY="166.0" mnemonicParsing="false" prefHeight="31.0" prefWidth="107.0" text="view Inventory" />
+            <TextArea fx:id="textArea2" layoutX="260.0" layoutY="139.0" prefHeight="200.0" prefWidth="200.0" promptText="list the parts of organizational order.." />
+            <Button layoutX="340.0" layoutY="345.0" mnemonicParsing="false" text="Submit" />
+            <TextField fx:id="totalproductioncost" layoutX="657.0" layoutY="214.0" onAction="#totalproductioncost" promptText="total production cost" />
+            <Button fx:id="saveproductioncost" layoutX="712.0" layoutY="252.0" mnemonicParsing="false" onAction="#saveproductioncost" text="save" />
+            <Button fx:id="producedSceneButton" layoutX="682.0" layoutY="524.0" mnemonicParsing="false" onAction="#producedSceneButton" text="produced vehicles" />
+            <Button fx:id="machineSceneButton" layoutX="31.0" layoutY="524.0" mnemonicParsing="false" onAction="#machineSceneButton" text="machines" />
+         </children>
+      </AnchorPane>
+   </right>
+</BorderPane>

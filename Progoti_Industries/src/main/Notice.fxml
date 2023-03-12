@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TextArea?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane id="AnchorPane" prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/18" xmlns:fx="http://javafx.com/fxml/1" fx:controller="user1pkj.NoticeController">
+   <children>
+      <Label layoutX="22.0" layoutY="22.0" text="Notice">
+         <font>
+            <Font name="System Bold" size="16.0" />
+         </font></Label>
+      <Button fx:id="updateNoticeButton" layoutX="88.0" layoutY="200.0" mnemonicParsing="false" onAction="#updateNoticeOnClick" text="Update Notice" />
+      <TextArea fx:id="noticeFieldForHR1" layoutX="88.0" layoutY="238.0" prefHeight="148.0" prefWidth="444.0" />
+      <Button fx:id="updateNoticeButton1" layoutX="187.0" layoutY="200.0" mnemonicParsing="false" onAction="#postNoticeOnClick" text="Post Notice" />
+      <TextArea fx:id="postedNotice" layoutX="88.0" layoutY="35.0" prefHeight="148.0" prefWidth="444.0" />
+      <Button fx:id="goBack" layoutX="272.0" layoutY="200.0" mnemonicParsing="false" onAction="#clickGoBack" text="Back" />
+   </children>
+</AnchorPane>

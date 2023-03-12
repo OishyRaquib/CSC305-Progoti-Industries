@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Separator?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.effect.SepiaTone?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.BorderPane?>
+<?import javafx.scene.text.Font?>
+<?import javafx.scene.text.Text?>
+
+<AnchorPane id="AnchorPane" prefHeight="576.0" prefWidth="699.0" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="main.PurchaseHistoryController">
+   <children>
+      <BorderPane prefHeight="93.0" prefWidth="699.0" style="-fx-background-color: #17202A;">
+         <left>
+            <Button fx:id="back" mnemonicParsing="false" onAction="#goBackOnClick" prefHeight="30.0" prefWidth="25.0" style="-fx-background-color: #2E4053;" text="&lt;" textFill="#f8f8f8" BorderPane.alignment="CENTER">
+               <BorderPane.margin>
+                  <Insets left="20.0" top="20.0" />
+               </BorderPane.margin>
+            </Button>
+         </left></BorderPane>
+      <Separator layoutX="-1.0" layoutY="89.0" prefHeight="3.0" prefWidth="700.0" />
+      <Text fill="#2d34bc" layoutX="232.0" layoutY="175.0" strokeType="OUTSIDE" strokeWidth="0.0" text="PURCHASE HISTORY">
+         <font>
+            <Font size="24.0" />
+         </font>
+         <effect>
+            <SepiaTone />
+         </effect>
+      </Text>
+      <TableView fx:id="tableView" layoutX="110.0" layoutY="199.0" prefHeight="272.0" prefWidth="461.0">
+        <columns>
+          <TableColumn fx:id="model_column" prefWidth="141.0" text="Model Name" />
+            <TableColumn fx:id="color_column" prefWidth="90.0" text="Color" />
+            <TableColumn fx:id="wheel_column" prefWidth="97.0" text="Wheel" />
+            <TableColumn fx:id="price_column" prefWidth="132.0" text="Total Price" />
+        </columns>
+      </TableView>
+   </children>
+</AnchorPane>

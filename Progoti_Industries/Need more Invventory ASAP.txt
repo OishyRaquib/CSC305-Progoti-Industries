@@ -1,0 +1,1 @@
+low on inventory can't produce more vehicles 
